@@ -1,0 +1,118 @@
+.about_main{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.20) 0%, rgba(0, 0, 0, 0.20) 100%), url("../images/about_sec_pic.jpeg") lightgray 50% / cover no-repeat;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about_main h2{
+    color: var(--white, #FFF);
+text-align: center;
+font-family: "Noto Sans JP";
+font-size: 48px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+
+/* ===insurance starts here==== */
+.insurance{
+    padding: 80px 0;
+    width: 100%;
+}
+.insurance h2{
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: 32px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.insurance_text-pic{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.insurance_text-pic p{
+    width: 60%;
+    /* max-width: 657px; */
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.insurance_text-pic img{
+    width: 40%;
+    /* max-width: 326px; */
+}
+
+.qanda h2{
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-bottom: 30px;
+}
+
+.qanda p span{
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+.qanda p{
+    color: #000;
+font-family: "Noto Sans JP";
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin: 20px 0;
+}
+.qanda .underline{
+    width: 100%;
+    height: 1px;
+    background-color: #D3CECE;
+    margin-bottom: 40px;
+}
+
+.insurance:nth-child(2), .insurance:nth-child(4){
+    background-color: #F5F4F4;;
+}
+
+@media(max-width: 1440px){
+    .insurance_container{
+        width: 90%;
+    }
+}
+
+@media(max-width: 1200px){
+    .insurance_text-pic p{
+        width: 50%;
+    }
+    .insurance_text-pic img{
+        width: 50%;
+    }
+}
+@media(max-width: 1000px){
+    .insurance_text-pic{
+        flex-direction: column;
+        gap: 20px;
+    }
+    .insurance_text-pic p{
+        width: 100%;
+    }
+    .insurance_text-pic img{
+        width: 100%;
+    }
+}
